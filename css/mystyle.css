@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-sizing: border-box;
+}
+
+body {
+    background: #111;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+article {
+    margin-top: 100px;
+}
+
+article h2 {
+    color: rgb(230, 184, 124);
+}
+
+article hr {
+    height: 2px;
+    border: 0 solid;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dbd52b+0,d67022+41,e22b2e+57,db13d4+100 */
+    background: #dbd52b;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #dbd52b 0%, #d67022 41%, #e22b2e 57%, #db13d4 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #dbd52b 0%, #d67022 41%, #e22b2e 57%, #db13d4 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #dbd52b 0%, #d67022 41%, #e22b2e 57%, #db13d4 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbd52b', endColorstr='#db13d4', GradientType=1);
+    /* IE6-9 */
+}
+
+article p {
+    font-size: 20px;
+}
+
+.wrap {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.main {
+    width: 100%;
+    min-height: 1500px;
+}
+
+.section-toggle {
+    display: none;
+    height: calc(100vh - 50px);
+    background: #fff;
+    color: #001f3f;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.section-toggle h2 {
+    font-size: 60px;
+    margin-top: 50px;
+}
+
+.section-toggle p {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.section-toggle button {
+    background: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 40px;
+    display: inline-block;
+    border: 5px solid #001f3f;
+    transition: .3s all ease;
+}
+
+.section-toggle button:hover {
+    border: 5px solid #0074d9;
+    color: #0074d9;
+}
+
+.btn-toggle {
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    display: block;
+    background: #ffdc00;
+    text-align: center;
+}
+
+@media screen and (max-width:500px) {
+    .section-toggle h2 {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-height:550px) {
+    .section-toggle h2 {
+        font-size: 40px;
+        margin-top: 0;
+    }
+}
